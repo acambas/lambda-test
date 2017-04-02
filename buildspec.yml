@@ -1,20 +1,20 @@
 version: 0.1
 
-environment_variables:
-  plaintext:
-    key: "value"
-    key: "value"
+# environment_variables:
+#   plaintext:
+#     key: "value"
+#     key: "value"
             
 phases:
-  install:
-    commands:
-      - npm install -g serverless
+  # install:
+  #   commands:
+  #     - npm install -g serverless
   pre_build:
     commands:
       - npm install
   build:
     commands:
-      - sls deploy
-artifacts:
-  files:
-    - .serverless/
+      - npm run build
+# artifacts:
+#   files:
+#     - .serverless/
