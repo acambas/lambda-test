@@ -14,9 +14,7 @@ phases:
       - npm install
   build:
     commands:
-      - sls deploy --noDeploy
+      - sls deploy
 artifacts:
   files:
     - .serverless/
-  discard-paths: yes
-  base-directory: location
