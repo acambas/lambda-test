@@ -15,6 +15,8 @@ phases:
   build:
     commands:
       - npm run build
-# artifacts:
-#   files:
-#     - .serverless/
+artifacts:
+  files:
+    - handler.js
+    - package.json
+    - serverless.yml
