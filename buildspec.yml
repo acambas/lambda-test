@@ -6,9 +6,6 @@ version: 0.1
 #     key: "value"
             
 phases:
-  install:
-    commands:
-      - npm install -g serverless
   pre_build:
     commands:
       - npm install
@@ -20,3 +17,4 @@ artifacts:
     - handler.js
     - package.json
     - serverless.yml
+    - node_modules
