@@ -17,4 +17,3 @@ artifacts:
     - handler.js
     - package.json
     - serverless.yml
-    - node_modules/**/*
