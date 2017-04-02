@@ -6,9 +6,9 @@ version: 0.1
 #     key: "value"
             
 phases:
-  # install:
-  #   commands:
-  #     - npm install -g serverless
+  install:
+    commands:
+      - npm install -g serverless
   pre_build:
     commands:
       - npm install
