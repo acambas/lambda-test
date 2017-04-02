@@ -5,7 +5,8 @@
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "build": "sls deploy"
+    "build": "exit 0",
+    "deploy:dev": "sls deploy --stage dev"
   },
   "author": "",
   "license": "ISC",
