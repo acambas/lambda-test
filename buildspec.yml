@@ -1,0 +1,22 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    key: "value"
+    key: "value"
+            
+phases:
+  install:
+    commands:
+      - npm install -g serverless
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - sls deploy --noDeploy
+artifacts:
+  files:
+    - .serverless/
+  discard-paths: yes
+  base-directory: location
